@@ -22,7 +22,7 @@
   size: 6px;
   font-size: 20px;
   border-radius: 5px;
-  border: 3px solid #1fa71f;
+  border: 3px solid #0593D5;
 }
 
 
@@ -34,7 +34,7 @@
     padding: .5em;
     font-size: 15px;
     border-radius: 5px;
-    border: 2px solid #1fa71f;
+    border: 2px solid #0593D5;
   }
 
   h2 {
@@ -65,17 +65,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(81, 81, 3);
+  background-color: #0593D5;
   color: white;
   border-radius: 6px;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
+}
+.btnColorFocClear{
+  background-color: #ff000085;
+  
 }
 
 .btn:hover {
-  background-color: rgb(126, 126, 3);
+  background-color: #0593d5cb;
+}
+.btnColorFocClear:hover{
+  background-color: #fa1414aa;
+  
 }
 
 .btn:active {
-  background-color: rgb(123, 123, 1);
+  background-color: #0593d5a2;
+  transition: .02s ease-in-out;
+
+}
+.btnColorFocClear:active{
+  background-color: #fa14146a;
+  transition: 0.2s ease-in-out;
+  
 }
