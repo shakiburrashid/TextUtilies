@@ -14,7 +14,7 @@
 
 }
 
-.blank-page {
+.textarea{
   margin-top: 1.2em;
   width: 50em;
   height: 15rem;
@@ -23,11 +23,12 @@
   font-size: 20px;
   border-radius: 5px;
   border: 3px solid #0593D5;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 
 @media screen and (max-width:600px) {
-  .blank-page {
+  .textarea{
     margin-top: 1.2em;
     width: 20em;
     height: 8em;
@@ -67,9 +68,10 @@
   justify-content: center;
   background-color: #0593D5;
   color: white;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 18px;
   font-weight: 700;
+  border: none;
 }
 .btnColorFocClear{
   background-color: #ff000085;
@@ -77,7 +79,7 @@
 }
 
 .btn:hover {
-  background-color: #0593d5cb;
+  background-color: #0681ba;
 }
 .btnColorFocClear:hover{
   background-color: #fa1414aa;
@@ -85,7 +87,7 @@
 }
 
 .btn:active {
-  background-color: #0593d5a2;
+  background-color: #2189ba;
   transition: .02s ease-in-out;
 
 }

@@ -33,27 +33,27 @@ function App() {
     window.navigator.clipboard.writeText(text);
   };
   let toPaste = () => {
-    copytoclick.current?.select();
-    setText(window.navigator.clipboard.readText());
-    
-};
+    window.navigator.clipboard.readText().then(
+      (e)=>{setText(e)}
+    );
+  };
 
-return (
-  <>
-    <div className="container">
-      <h2>Text Utilize [Riyadh + Minu]</h2>
-      <textarea className="blank-page" value={text} onChange={storedText} ref={copytoclick}></textarea>
-      <div className="button">
-        <button onClick={toUperCase} className='btn'>Uppercase</button>
-        <button onClick={toLowerCase} className='btn'>Lower Case</button>
-        <button onClick={toCapitailize} className='btn'>Capitailize</button>
-        <button onClick={toClear} className='btn btnColorFocClear'>Clear</button>
-        <button onClick={toCopy} className='btn'>Copy</button>
-        <button onClick={toPaste} className='btn'>Paste</button>
+  return (
+    <>
+      <div className="container">
+        <h2>Text Utilize [Riyadh + Minu]</h2>
+        <textarea className="textarea" value={text} onChange={storedText} ref={copytoclick}></textarea>
+        <div className="button">
+          <button onClick={toUperCase} className='btn'>Uppercase</button>
+          <button onClick={toLowerCase} className='btn'>Lower Case</button>
+          <button onClick={toCapitailize} className='btn'>Capitalize</button>
+          <button onClick={toCopy} className='btn'>Copy</button>
+          <button onClick={toPaste} className='btn'>Paste</button>
+          <button onClick={toClear} className='btn btnColorFocClear'>Clear</button>
+        </div>
       </div>
-    </div>
-  </>
-)
+    </>
+  )
 }
 
 export default App
