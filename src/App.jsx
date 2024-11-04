@@ -41,7 +41,7 @@ function App() {
   return (
     <>
       <div className="container">
-        <h2>Text Utilize [Riyadh + Minu]</h2>
+        <h2>Text Utilize</h2>
         <textarea className="textarea" value={text} onChange={storedText} ref={copytoclick}></textarea>
         <div className="button">
           <button onClick={toUperCase} className='btn'>Uppercase</button>
